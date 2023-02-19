@@ -1,0 +1,12 @@
+@use '../abstracts' as *;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+   overflow-x: hidden !important;
+   background-color: $bg-white !important;
+   font-family: 'Plus Jakarta Sans', sans-serif !important;
+   font-weight: 400 !important;
+   color: $white !important;
+}
