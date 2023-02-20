@@ -1,0 +1,11 @@
+@use "../abstracts/" as *;
+
+nav.navbar {
+   div.nav-link {
+      a {
+         color: $blue-10 !important;
+         font-weight: 600 !important;
+         // font-size: 22px;
+      }
+   }
+}
