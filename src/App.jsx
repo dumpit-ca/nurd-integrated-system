@@ -3,7 +3,7 @@ import '../src/assets/sass/main.scss';
 
 function App() {
    return (
-      <div className="App">
+      <div className="container App">
          <Navbar />
          <div className="content"></div>
       </div>
