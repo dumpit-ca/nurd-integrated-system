@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import logo from '../../src/images/nurd-logo.png';
+import { useState } from "react";
+import logo from "../../src/images/nurd-logo.png";
 
 export default function NavBar() {
    const [navbar, setNavbar] = useState(false);
@@ -14,25 +14,25 @@ export default function NavBar() {
                   </a>
                   <div className="md:hidden">
                      <div onClick={() => setNavbar(!navbar)} className="text-3xl absolute right-8 top-12 cursor-pointer">
-                        <box-icon name={navbar ? 'x' : 'menu'}></box-icon>
+                        <box-icon name={navbar ? "x" : "menu"}></box-icon>
                      </div>
                   </div>
                </div>
             </div>
             <div>
-               <div className={`flex-1 nav-link justify-self-center pb-3 mt-3.5 md:block md:pb-0 md:mt-0 ${navbar ? 'block' : 'hidden'}`}>
-                  <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+               <div className={`flex-1 nav-link justify-self-center pb-3 mt-3.5 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"}`}>
+                  <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 gap-10">
                      <li className="">
-                        <a href="#">Home</a>
+                        <a href="#">About</a>
                      </li>
                      <li className="">
-                        <a href="#">Blog</a>
+                        <a href="#">Events</a>
                      </li>
                      <li className="">
-                        <a href="#">About US</a>
+                        <a href="#">Forum</a>
                      </li>
                      <li className="">
-                        <a href="#">Contact US</a>
+                        <a href="#">Contact Us</a>
                      </li>
                   </ul>
                   <div className="mt-3 space-y-2 lg:hidden md:inline-block">
