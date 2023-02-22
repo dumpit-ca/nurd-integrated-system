@@ -1,9 +1,9 @@
-import Navbar from './components/Navbar';
-import '../src/assets/sass/main.scss';
+import Navbar from "./components/Navbar";
+import "../src/assets/sass/main.scss";
 
 function App() {
    return (
-      <div className="container App">
+      <div className="App">
          <Navbar />
          <div className="content"></div>
       </div>
