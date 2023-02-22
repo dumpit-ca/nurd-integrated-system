@@ -45,18 +45,18 @@ const Navbar = () => {
       //       </div>
       //    </div>
       // </nav>
-      <nav class="bg-white px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0">
-         <div class="container flex flex-wrap items-center justify-between mx-auto">
-            <a href="https://flowbite.com/" class="flex items-center">
+      <nav className="bg-white md:px-2 px-4 fixed w-full z-20 top-0 left-0 navbar">
+         <div className="container flex flex-wrap items-center justify-between mx-auto">
+            <a href="/" class="flex items-center">
                <img src={logo} alt="NURD Logo" />
             </a>
-            <div onClick={() => setOpen(!open)} className="text-3xl absolute right-8 top-12 cursor-pointer lg:hidden">
+            <div onClick={() => setOpen(!open)} className="text-3xl absolute right-8 cursor-pointer lg:hidden">
                <box-icon name={open ? "x" : "menu"}></box-icon>
             </div>
             <div className="nav-link flex">
                <ul
-                  className={`lg:flex lg:items-center lg:gap-20  lg:pb-0 pb-12 lg:text-base cursor-pointer absolute lg:static bg-white lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-300 ease-in-out ${
-                     open ? "top-44 opacity-100" : "top-[-490px]"
+                  className={`lg:flex lg:items-center lg:gap-20  lg:pb-0 pb-12 lg:text-base cursor-pointer absolute lg:static lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-28 transition-all duration-300 ease-in-out ${
+                     open ? "top-28 opacity-100" : "top-[-400px]"
                   } lg:opacity-100 opacity-0`}
                >
                   <li>

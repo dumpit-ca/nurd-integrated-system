@@ -3,7 +3,7 @@
 nav.navbar {
    div.nav-link {
       a {
-         color: $blue-10 !important;
+         color: $blue-10;
          font-weight: 600 !important;
          // font-size: 22px;
       }
@@ -17,6 +17,6 @@ nav.navbar {
 
    .btn-login {
       background-color: $blue-0B;
-      color: $white;
+      color: $white !important;
    }
 }
