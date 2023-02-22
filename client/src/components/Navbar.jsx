@@ -1,90 +1,65 @@
-import { useState } from "react";
-import logo from "../../src/images/nurd-logo.png";
-const Navbar = () => {
-   let [open, setOpen] = useState(false);
-   return (
-      // <nav className="bg-white px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0">
-      //    <div className="container flex flex-wrap items-center justify-between mx-auto">
-      //       <a href="" className="flex items-center">
-      //          <img src={logo} alt="NURD Logo" />
-      //       </a>
+import { useState } from 'react';
+import logo from '../../src/images/nurd-logo.png';
 
-      //       <div className="flex md:order-2">
-      //          <div onClick={() => setOpen(!open)} className="text-3xl absolute right-8 top-12 cursor-pointer lg:hidden">
-      //             <box-icon name={open ? "x" : "menu"}></box-icon>
-      //          </div>
-      //       </div>
-      //       <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
-      //          <ul
-      //             className={`lg:flex lg:items-center lg:gap-20  lg:pb-0 pb-12 lg:text-base cursor-pointer absolute lg:static bg-white lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-300 ease-in-out ${
-      //                open ? "top-44 opacity-100" : "top-[-490px]"
-      //             } lg:opacity-100 opacity-0`}
-      //          >
-      //             <li>
-      //                <a href="#">About</a>
-      //             </li>
-      //             <li>
-      //                <a href="#">Events</a>
-      //             </li>
-      //             <li>
-      //                <a href="#">Forum</a>
-      //             </li>
-      //             <li>
-      //                <a href="#">Contact Us</a>
-      //             </li>
-      //             <div className="flex gap-4 items-center form-search md:mt-0 mt-2">
-      //                <div className="relative">
-      //                   <input className="search-input rounded-lg border mr-2 py-1" type="text" name="search" id="" />
-      //                   <button className="cursor-pointer">
-      //                      <i className="btn-search bx bx-search text-xl absolute md:top-0.5 md:right-3 top-0.5 right-3"></i>
-      //                   </button>
-      //                </div>
-      //                <button className="btn-login rounded-lg font-bold md:px-8 md:py-2 py-1 px-5">Log in</button>
-      //             </div>
-      //          </ul>
-      //       </div>
-      //    </div>
-      // </nav>
-      <nav className="bg-white md:px-2 px-4 fixed w-full z-20 top-0 left-0 navbar">
-         <div className="container flex flex-wrap items-center justify-between mx-auto">
-            <a href="/" class="flex items-center">
-               <img src={logo} alt="NURD Logo" />
-            </a>
-            <div onClick={() => setOpen(!open)} className="text-3xl absolute right-8 cursor-pointer lg:hidden">
-               <box-icon name={open ? "x" : "menu"}></box-icon>
+export default function NavBar() {
+   const [navbar, setNavbar] = useState(false);
+
+   return (
+      <nav className="w-full bg-white navbar">
+         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+            <div>
+               <div className="flex items-center justify-between py-3 md:py-5 md:block">
+                  <a href="#">
+                     <img src={logo} alt="NURD Logo" />
+                  </a>
+                  <div className="md:hidden">
+                     <div onClick={() => setNavbar(!navbar)} className="text-3xl absolute right-8 top-12 cursor-pointer">
+                        <box-icon name={navbar ? 'x' : 'menu'}></box-icon>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div className="nav-link flex">
-               <ul
-                  className={`lg:flex lg:items-center lg:gap-20  lg:pb-0 pb-12 lg:text-base cursor-pointer absolute lg:static lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-28 transition-all duration-300 ease-in-out ${
-                     open ? "top-28 opacity-100" : "top-[-400px]"
-                  } lg:opacity-100 opacity-0`}
-               >
-                  <li>
-                     <a href="#">About</a>
-                  </li>
-                  <li>
-                     <a href="#">Events</a>
-                  </li>
-                  <li>
-                     <a href="#">Forum</a>
-                  </li>
-                  <li>
-                     <a href="#">Contact Us</a>
-                  </li>
-                  <div className="flex gap-4 items-center form-search md:mt-0 mt-2">
+            <div>
+               <div className={`flex-1 nav-link justify-self-center pb-3 mt-3.5 md:block md:pb-0 md:mt-0 ${navbar ? 'block' : 'hidden'}`}>
+                  <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+                     <li className="">
+                        <a href="#">Home</a>
+                     </li>
+                     <li className="">
+                        <a href="#">Blog</a>
+                     </li>
+                     <li className="">
+                        <a href="#">About US</a>
+                     </li>
+                     <li className="">
+                        <a href="#">Contact US</a>
+                     </li>
+                  </ul>
+                  <div className="mt-3 space-y-2 lg:hidden md:inline-block">
                      <div className="relative">
-                        <input className="search-input rounded-lg border mr-2 py-1" type="text" name="search" id="" />
+                        <input className="search-input rounded-lg border mr-2 py-1 md:w-auto w-full" type="text" name="search" id="" />
                         <button className="cursor-pointer">
                            <i className="btn-search bx bx-search text-xl absolute md:top-0.5 md:right-3 top-0.5 right-3"></i>
                         </button>
                      </div>
+                     <a href="#" className="btn-login inline-block w-full px-4 py-2 text-center text-white bg-gray-600 rounded-md shadow hover:bg-gray-800">
+                        Log in
+                     </a>
                   </div>
-                  <a className="btn-login rounded-lg font-bold md:px-8 md:py-2 py-1 px-5">Log in</a>
-               </ul>
+               </div>
+            </div>
+            <div className="hidden space-x-2 md:flex md:items-center">
+               <div className="relative">
+                  <input className="search-input rounded-lg border mr-2 py-1" type="text" name="search" id="" />
+                  <button className="cursor-pointer">
+                     <i className="btn-search bx bx-search text-xl absolute md:top-0.5 md:right-3 top-0.5 right-3"></i>
+                  </button>
+               </div>
+               <a href="#" className="btn-login px-4 py-2 text-white bg-gray-600 rounded-md shadow hover:bg-gray-800">
+                  Log in
+               </a>
             </div>
          </div>
       </nav>
    );
-};
-
-export default Navbar;
+}
