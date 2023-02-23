@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import "../src/assets/sass/main.scss";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
       <div className="App">
          <Navbar />
          <div className="content"></div>
+         <Footer />
       </div>
    );
 }
