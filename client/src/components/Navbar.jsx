@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../../src/images/nurd-logo.png";
+import logo from "../assets/images/nurd-logo.png";
 
 export default function NavBar() {
    const [navbar, setNavbar] = useState(false);
