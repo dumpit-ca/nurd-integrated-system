@@ -2,4 +2,26 @@
 
 .footer {
    background-color: $footer;
+
+   .footer-header {
+      color: $footer-links;
+      font-weight: 800;
+   }
+}
+
+a.footer-links {
+   color: $footer-links;
+   font-weight: 400 !important;
+}
+
+.footer-bottom {
+   .btn-to-top {
+      color: $blue-10;
+   }
+
+   .footer-bottom-header {
+      border-top: 3px solid $footer;
+      color: $footer-bottom !important;
+      font-weight: 700;
+   }
 }
