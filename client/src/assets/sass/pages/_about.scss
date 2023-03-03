@@ -1,1 +1,26 @@
 @use "../abstracts/" as *;
+
+.about {
+    .hero-header {
+        .hero-header-text {
+            h1 {
+                color: $blue-0B;
+                font-family: 'Plus Jakarta Sans ExtraBold', sans-serif;
+                font-weight: bold;
+                line-height: 61.89px;
+            }
+
+            .hero-header-subheader {
+                color: $gray-70;
+                font-weight: 500;
+            }
+
+        }
+
+        .hero-header-img {
+            .hero-img {
+                border-radius: 40px;
+            }
+        }
+    }
+}
