@@ -1,48 +1,28 @@
 @use "../abstracts/" as *;
 @use "../mixins/" as *;
 
-.about {
-    .hero-header {
-        .hero-header-text {
-            h1 {
-                color: $blue-0B;
-                font-family: 'Plus Jakarta Sans ExtraBold', sans-serif;
-                font-weight: bold;
-                line-height: 61.89px;
-            }
+.hero-img-container {
+    background-image: url('../../../../src/assets/images/about-hero.png');
+    height: 571px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
 
-            .hero-header-subheader {
-                color: $gray-70;
-                font-weight: 500;
-            }
+    .hero-inner-container {
+        color: $white;
 
-        }
-
-        .hero-header-img {
-            .hero-img {
-                border-radius: 40px;
-            }
-        }
-    }
-
-
-    .line {
-        @include md {
-            border-right: 5px solid $blue-0B;
-            height: 80px;
-        }
-
-        @include xs {
-            border-bottom: 5px solid $blue-0B;
-            height: 80px;
-        }
-    }
-
-    .about-header {
         h1 {
-            color: $blue-0B;
             font-family: 'Plus Jakarta Sans ExtraBold', sans-serif;
             font-weight: 700;
         }
+
+    }
+
+    .hero-overlay {
+        background-image: linear-gradient(99.46deg, $blue-0B -1.57%, $yellow-E7 100%);
+        height: 571px;
+        mix-blend-mode: multiply;
+        border-radius: 20px;
     }
 }
