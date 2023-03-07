@@ -1,4 +1,5 @@
 import Hero from "../../assets/images/hero-img.png";
+import logo from "../../assets/images/nurd-logo.png";
 const About = () => {
    return (
       <div className="container mx-auto">
@@ -13,6 +14,13 @@ const About = () => {
                </div>
                <div className="hero-header-img">
                   <img src={Hero} className="hero-img" alt="NU Hero Image" />
+               </div>
+            </div>
+            <div className="md:my-24 md:flex gap-24 items-center md:justify-center">
+               <img src={logo} className="about-header-img" alt="" />
+               <div className="line"></div>
+               <div className="about-header">
+                  <h1 className="md:text-6xl text-lg">About Us</h1>
                </div>
             </div>
          </div>

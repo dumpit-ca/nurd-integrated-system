@@ -1,4 +1,5 @@
 @use "../abstracts/" as *;
+@use "../mixins/" as *;
 
 .about {
     .hero-header {
@@ -21,6 +22,27 @@
             .hero-img {
                 border-radius: 40px;
             }
+        }
+    }
+
+
+    .line {
+        @include md {
+            border-right: 5px solid $blue-0B;
+            height: 80px;
+        }
+
+        @include xs {
+            border-bottom: 5px solid $blue-0B;
+            height: 80px;
+        }
+    }
+
+    .about-header {
+        h1 {
+            color: $blue-0B;
+            font-family: 'Plus Jakarta Sans ExtraBold', sans-serif;
+            font-weight: 700;
         }
     }
 }
