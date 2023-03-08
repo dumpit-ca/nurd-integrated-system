@@ -1,15 +1,20 @@
-// import { useState } from 'react';
 const About = () => {
    return (
-      <div className='container mx-auto px-5'>
-         <div className='about'>
-            <div className='grid grid-cols-2 gap-5'>
-               <div className='hero-text flex flex-col'>
-                  <h1 className='hero-text-header'>
-                     Powering innovation with imagination.
+      <div className="container mx-auto py-10">
+         <div className="hero-img-container relative">
+            <div className="hero-inner-container flex justify-center items-center h-full w-full z-10 absolute">
+               <div className="text-center">
+                  <h1 className="text-5xl">
+                     Powering <span className="uppercase">INNOVATION</span>
+                     <br />
+                     with <span className="uppercase">IMAGINATION</span>
                   </h1>
+                  <p className="text-base mt-10">The NU Research Department empowers every researcher and provides support towards innovative ideas that will revolutionize industries.</p>
+                  {/* <a href="">LOGIN</a>
+                  <a href="">BROWSE FORUMS</a> */}
                </div>
             </div>
+            <div className="hero-overlay absolute w-full bottom-0"></div>
          </div>
       </div>
    );

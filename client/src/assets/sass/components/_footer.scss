@@ -1,16 +1,16 @@
 @use "../abstracts/" as *;
 
 .footer {
-   background-color: $footer;
+   background-color: $white-EB;
 
    .footer-header {
-      color: $footer-links;
+      color: $blue-31;
       font-weight: 800;
    }
 }
 
 a.footer-links {
-   color: $footer-links;
+   color: $blue-31;
    font-weight: 400 !important;
 }
 
@@ -20,8 +20,8 @@ a.footer-links {
    }
 
    .footer-bottom-header {
-      border-top: 3px solid $footer;
-      color: $footer-bottom !important;
+      border-top: 3px solid $white-EB;
+      color: $gray-70 !important;
       font-weight: 700;
    }
 }
