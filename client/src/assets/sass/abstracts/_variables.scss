@@ -1,0 +1,32 @@
+// colors
+$white: rgba(255, 255, 255, 1);
+$raisin-black: rgba(34, 34, 34, 1) !default;
+$dark-midnight-blue: rgba(16, 49, 107, 1);
+$egyptian-blue: rgba(11, 64, 156, 1);
+$american-yellow: rgba(231, 187, 0, 1);
+
+$colors: (
+  "white": $white,
+  "default": $raisin-black,
+  "blue-900": $dark-midnight-blue,
+  "blue-800": $egyptian-blue,
+);
+// breakpoints
+$breakpoints: (
+  "xs": 0,
+  "sm": 640px,
+  "md": 768px,
+  "lg": 1280px,
+  "xl": 1200px,
+);
+
+//border-radius
+$base-border-thickness: 0.125rem; //2px
+$base-border-radius: 0.375rem !default; //6px
+$md-border-radius: 1.25rem; //20px
+
+// font weight
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-xbold: 800;
