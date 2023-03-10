@@ -1,0 +1,26 @@
+@use "../../sass/abstracts/variables" as color;
+.footer {
+  background-color: color.$lavender;
+
+  .footer-header {
+    color: color.$dark-midnight-blue;
+    font-weight: color.$font-weight-xbold;
+  }
+}
+
+a.footer-links {
+  color: color.$dark-midnight-blue;
+  font-weight: color.$font-weight-regular;
+}
+
+.footer-bottom {
+  .btn-to-top {
+    color: color.$dark-midnight-blue;
+  }
+
+  .footer-bottom-header {
+    border-top: 3px solid color.$lavender;
+    color: color.$dark-silver !important;
+    font-weight: color.$font-weight-bold;
+  }
+}

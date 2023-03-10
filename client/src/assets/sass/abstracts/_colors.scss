@@ -2,11 +2,17 @@
 
 @each $key, $value in color.$colors {
   .text-#{$key} {
-    color: $value;
+    color: $value !important;
   }
 }
 @each $key, $value in color.$colors {
   .btn-#{$key} {
-    color: $value;
+    background-color: $value !important;
+  }
+}
+
+@each $key, $value in color.$colors {
+  .bg-#{$key} {
+    background-color: $value !important;
   }
 }

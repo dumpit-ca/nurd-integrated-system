@@ -1,0 +1,8 @@
+@use "../abstracts/variables";
+body {
+  overflow-x: hidden;
+  background-color: variables.$white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  width: 100%;
+}

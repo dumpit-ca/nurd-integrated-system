@@ -4,15 +4,15 @@ import About from "./pages/front/About";
 import "../src/assets/sass/main.scss";
 
 function App() {
-   return (
-      <div className="App">
-         <Navbar />
-         <div className="content">
-            <About />
-         </div>
-         <Footer />
+  return (
+    <div className="App">
+      <Navbar />
+      <div className="content">
+        <About />
       </div>
-   );
+      <Footer />
+    </div>
+  );
 }
 
 export default App;

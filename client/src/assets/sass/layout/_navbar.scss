@@ -1,0 +1,19 @@
+@use "../../sass/abstracts/variables" as var;
+nav.navbar {
+  div.nav-link {
+    a {
+      font-weight: var.$font-weight-regular;
+    }
+  }
+
+  .form-search {
+    .search-input {
+      border-color: var.$gainsboro !important;
+      background-color: var.$gainsboro !important;
+    }
+  }
+
+  .btn-login {
+    font-weight: var.$font-weight-bold;
+  }
+}

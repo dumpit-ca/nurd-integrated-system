@@ -3,7 +3,7 @@ const About = () => {
     <div className="container mx-auto py-10">
       <div className="hero-img-container relative">
         <div className="hero-inner-container flex justify-center items-center h-full w-full z-10 absolute">
-          <div className="text-center md:p-0 p-5">
+          {/* <div className="text-center md:p-0 p-5">
             <h1 className="text-5xl">
               Powering <span className="uppercase">INNOVATION</span>
               <br />
@@ -14,12 +14,7 @@ const About = () => {
               support towards innovative ideas that will revolutionize
               industries.
             </p>
-            {/* <div className="grid gap-2 md:block">
-                     <a href="" className="btn"></a>
-                  </div> */}
-            {/* <a href="">LOGIN</a>
-                  <a href="">BROWSE FORUMS</a> */}
-          </div>
+          </div> */}
         </div>
         <div className="hero-overlay absolute w-full bottom-0"></div>
       </div>
