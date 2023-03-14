@@ -51,7 +51,7 @@ export default function NavBar() {
               </li>
             </ul>
             <div className="mt-3 space-y-2 lg:hidden">
-              <div className="relative">
+              {/* <div className="relative">
                 <button className="cursor-pointer">
                   <i className="btn-search bx bx-search text-xl absolute lg:top-0.5 lg:right-40 top-0.5 right-3"></i>
                 </button>
@@ -61,6 +61,23 @@ export default function NavBar() {
                   name="search"
                   id=""
                 />
+              </div> */}
+              <div class="max-w-md mx-auto rounded-lg overflow-hidden md:max-w-xl">
+                <div class="md:flex">
+                  <div class="w-full p-3">
+                    <div class="relative">
+                      <i class="absolute fa fa-search text-gray-400 top-5 left-4"></i>
+                      <input
+                        type="text"
+                        class="bg-white h-14 w-full px-12 rounded-lg focus:outline-none hover:cursor-pointer"
+                        name=""
+                      />
+                      <span class="absolute top-4 right-5 border-l pl-4">
+                        <i class="fa fa-microphone text-gray-500 hover:text-green-500 hover:cursor-pointer"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
               </div>
               <a
                 href="#"
@@ -72,7 +89,7 @@ export default function NavBar() {
           </div>
         </div>
         <div className="hidden space-x-2 lg:flex lg:items-center">
-          <div className="relative">
+          {/* <div className="relative">
             <button className="cursor-pointer">
               <i className="btn-search bx bx-search text-xl absolute lg:top-0.5 lg:right-48 top-2 right-3"></i>
             </button>
@@ -83,6 +100,23 @@ export default function NavBar() {
               id=""
               placeholder="Search"
             />
+          </div> */}
+          <div className="max-w-md mx-auto rounded-lg overflow-hidden md:max-w-xl">
+            <div className="md:flex">
+              <div className="w-full p-3">
+                <div className="relative">
+                  <i className="absolute fa fa-search text-gray-400 top-5 left-4"></i>
+                  <input
+                    type="text"
+                    className="bg- h-14 w-full px-12 rounded-lg focus:outline-none hover:cursor-pointer"
+                    name=""
+                  />
+                  <span className="absolute top-4 right-5 border-l pl-4">
+                    <i className="fa fa-microphone text-gray-500 hover:text-green-500 hover:cursor-pointer"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
           <a
             href="#"
