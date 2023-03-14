@@ -74,13 +74,14 @@ export default function NavBar() {
         <div className="hidden space-x-2 lg:flex lg:items-center">
           <div className="relative">
             <button className="cursor-pointer">
-              <i className="btn-search bx bx-search text-xl absolute lg:top-0.5 lg:right-40 top-0.5 right-3"></i>
+              <i className="btn-search bx bx-search text-xl absolute lg:top-0.5 lg:right-48 top-2 right-3"></i>
             </button>
             <input
-              className="search-input rounded-lg border mr-2 py-1"
+              className="search-input rounded-lg border mr-2 py-1 w-56"
               type="text"
               name="search"
               id=""
+              placeholder="Search"
             />
           </div>
           <a
